@@ -9,14 +9,14 @@ body {
 
 h2 {
     text-align: center;
-    color: #4285F4; /* Google Blue */
+    color: #4285F4;
 }
 
 input {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
-    border: 2px solid #EA4335; /* Google Red */
+    border: 2px solid #EA4335; 
     border-radius: 5px;
     font-size: 14px;
     outline: none;
@@ -26,7 +26,7 @@ button {
     width: 100%;
     padding: 10px;
     border: none;
-    background: #34A853; /* Google Green */
+    background: #34A853; 
     color: white;
     font-size: 14px;
     border-radius: 5px;
@@ -35,7 +35,7 @@ button {
 }
 
 button:hover {
-    background: #2A7D43; /* Darker Green */
+    background: #2A7D43; 
 }
 
 ul {
@@ -54,10 +54,26 @@ li {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-li span {
-    flex-grow: 1;
-    font-size: 14px;
-    padding: 0 10px;
+.editable {
+    display: inline-block;
+    max-width: 150px; 
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin; 
+    -ms-overflow-style: none; 
+}
+
+.editable::-webkit-scrollbar {
+    height: 5px;
+}
+
+.editable::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.editable::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
 
 .edit-btn, .delete-btn {
@@ -70,19 +86,19 @@ li span {
 }
 
 .edit-btn {
-    background: #FBBC05; /* Google Yellow */
+    background: #FBBC05; 
     color: white;
 }
 
 .edit-btn:hover {
-    background: #E6A200; /* Darker Yellow */
+    background: #E6A200; 
 }
 
 .delete-btn {
-    background: #EA4335; /* Google Red */
+    background: #EA4335; 
     color: white;
 }
 
 .delete-btn:hover {
-    background: #C52319; /* Darker Red */
+    background: #C52319; 
 }
